@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sempre-branca: #ffffff;
+    --fundo-sec-cookie: #000000aa;
+    --fundo-cookie: #ffffff;
+    --texto-ligth-dark: #000000;
+    --texto-ligth-dark-a: #202020;
+    
+}
+
+.sseccao-de-cookies{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    background-color: var(--fundo-sec-cookie);
+}
+.sseccao-de-cookies.mostrar{
+    display: flex;
+}
+.sseccao-de-cookies .aviso-de-cookie{
+    position: absolute;
+    bottom: 40%;
+    background-color: var(--fundo-cookie);
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid var(--sempre-branca);
+    padding: 22px;
+    animation: animacao-para-cima 1s;
+    cursor: default;
+    transition: .2s;
+    
+    &:hover{
+    border: 1px solid var(--sempre-preta);
+    box-shadow: 10px 10px 15px #00000065;
+    }
+}
+.sseccao-de-cookies .aviso-de-cookie img{
+    width: 80px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+}
+.sseccao-de-cookies .ck-tt{
+    color: var(--sempre-azul);
+    font-size: 1em;
+}
+.sseccao-de-cookies .texto-cookie{
+    color: var(--texto-ligth-dark);
+    margin: 10px 0;
+    font-size: .9em;
+}
+.sseccao-de-cookies .btn-cookie{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sseccao-de-cookies .btn-cookie a{
+    text-decoration: none;
+    font-size: .9em;
+    background-color: var(--fundo-btn-a);
+    color: var(--sempre-branca);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .2s;
+
+    &:hover{
+        background-color: var(--fundo-btn-b);
+    }
+}
+
+@keyframes animacao-para-cima {
+    0%{bottom: -100%;}
+}
+
+.btn-button {
+    padding: 12px;
+    background-color: #db3434;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+form {
+    width: 20rem;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/*HOME*/
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+.UN {
+	border-radius: 20px;
+	width: 35%;
+	float: left;
+	margin-left: 0.1%;
+}
+p {
+	text-indent: 30px;
+	width: 60%;
+	text-align: justify;
+	float: right;
+	margin-right: 2%;
+	padding: 0;
+	font-size: 18px;
+}
+
+.gallery .control-operator:target~.controls .control-button {
+	color: #ccc;
+	color: rgba(255, 255, 255, .4)
+}
+
+.gallery .item:first-of-type {
+	position: static;
+	pointer-events: auto;
+	opacity: 1
+}
+
+.gallery .item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity .5s
+}
+
+.gallery .control-operator:nth-of-type(1):target~.item:nth-of-type(1) {
+	pointer-events: auto;
+	opacity: 1
+}
+
+.gallery .control-operator:nth-of-type(2):target~.item:nth-of-type(2) {
+	pointer-events: auto;
+	opacity: 1
+}
+
+.gallery .control-operator:nth-of-type(3):target~.item:nth-of-type(3) {
+	pointer-events: auto;
+	opacity: 1
+}
+
+.gallery {
+	position: relative;
+}
+
+.gallery .controls {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.gallery .control-button {
+	display: inline-block;
+	margin: 0 .02em;
+	font-size: 5em;
+	text-align: center;
+	text-decoration: none;
+	transition: color .1s;
+}
+
+/*titulos*/
+h1 {
+	padding: 2% 1%;
+	width: 98%;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #c9000f;
+	font-size: 50px;
+	font-family: impact;
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	padding: 2% 1%;
+	width: 98%;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #c9000f;
+	font-size: 35px;
+	font-family: impact;
+	text-align: center;
+	color: white;
+	float: left;
+}
+
+	@media (min-width: 1000px) {
+		.SP3 {
+			color: Black;
+			float: left;
+			width: 70%;
+			margin-bottom: 30px;
+		}
+	}
